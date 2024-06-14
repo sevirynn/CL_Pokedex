@@ -1,5 +1,6 @@
 import java.io.File;  
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Pokedex{
@@ -8,9 +9,10 @@ public class Pokedex{
     public static void main (String[] args){
        System.out.println("******************************************************************************************************************************************************");
        System.out.println("------------------------------------Please extend your terminal window so the stars above appear on a single line-------------------------------------");
-
+       System.out.println("----------------------------------------For best ASCII art quality, please choose a light mode terminal theme-----------------------------------------");
     
     //Choose input type
+        //TO-DO these should probably be separate functions
         Scanner input = new Scanner(System.in);
         System.out.println("Would you like to search by name or number?");
         String userInput = input.nextLine();
